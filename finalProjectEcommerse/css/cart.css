@@ -1,0 +1,406 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  /* background-color: black; */
+}
+
+/* nav section design  */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  background-color: black;
+  color: orangered;
+  padding: 25px 50px;
+  position: sticky;
+}
+
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navTItle {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.authCart {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.auth {
+  color: orangered;
+  margin-left: 10px;
+}
+
+.login {
+  cursor: pointer;
+}
+
+.navCart {
+  width: 28px;
+  height: 28px;
+  padding: 5px;
+  color: white !important;
+  background-color: teal;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.search {
+  width: 100%;
+  background-color: teal;
+  padding: 7px 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+
+.searchInput::placeholder {
+  color: white;
+}
+
+.searchIcon {
+  cursor: pointer;
+}
+
+.bestOffer {
+  color: white;
+  cursor: pointer;
+  animation-name: line;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes line {
+  from {
+    border-top: 3px solid teal;
+  }
+  to {
+    border-bottom: 3px solid teal;
+  }
+}
+
+.navBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menuItem {
+  cursor: pointer;
+  font-weight: 400;
+}
+
+/* cart css  */
+
+.filterContainer {
+  height: calc(100vh - 175px);
+  background-color: black;
+  color: white;
+  display: flex;
+  padding: 50px;
+  overflow: hidden;
+}
+
+.leftMenu {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.leftItem {
+  width: 75%;
+}
+
+.leftItemTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productdesc {
+  display: flex;
+  flex-direction: column;
+}
+
+.product_desc {
+  font-size: 10px;
+  color: gray;
+  letter-spacing: 1px;
+}
+
+.leftItemBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product_name {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.plus {
+  width: 40px;
+  padding: 5px;
+  background-color: teal;
+  color: white;
+
+  cursor: pointer;
+}
+
+.qButton {
+  width: 40px;
+  padding: 3px;
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+.imgItem {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.rightMenu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  border: 1px solid gray;
+  height: 500px;
+  padding: 5px 10px 15px 10px;
+  -webkit-box-shadow: 0px 0px 15px 5px #008080;
+  box-shadow: 0px 0px 15px 5px #008080;
+}
+
+.topRight {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  position: relative;
+}
+
+.pnameDesc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pname {
+  text-align: center;
+  color: orangered;
+  border-bottom: 2px solid teal;
+  width: max-content;
+}
+
+.price_indiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total-amt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btnBuy {
+  position: absolute;
+  bottom: -50px;
+  right: 10px;
+  background-color: teal;
+  color: white;
+  padding: 10px 15px;
+  width: max-content;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bottomRight {
+  position: relative;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 10;
+}
+
+.discountCode {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: orangered;
+  border-bottom: 2px solid teal;
+  width: max-content;
+}
+
+.codee {
+  letter-spacing: -8px;
+  font-size: 42px;
+}
+
+.discountForm {
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+
+.btnApply {
+  position: absolute;
+  bottom: -60px;
+  right: 10px;
+  background-color: teal;
+  color: white;
+  padding: 10px 15px;
+  width: max-content;
+  cursor: pointer;
+  font-weight: bold;
+  float: right;
+}
+
+/* model checkout css  */
+
+.checkout {
+  display: none;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 15px 50px 5px 50px;
+  -webkit-box-shadow: 0px 0px 15px 5px #008080;
+  box-shadow: 0px 0px 15px 5px #008080;
+}
+
+.checkTitle {
+  font-size: 20px;
+  color: gray;
+}
+
+label {
+  font-size: 12px;
+}
+
+.checkInput {
+  padding: 5px;
+  margin: 5px 0px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.checkInput::placeholder {
+  color: rgb(163, 163, 163);
+}
+
+.cardIcon {
+  margin-right: 15px;
+}
+
+.cardInfo {
+  display: flex;
+}
+
+.sm {
+  width: 20%;
+  margin: 20px 20px 20px 0;
+}
+
+.checkButton {
+  margin-top: 10px;
+  background-color: teal;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  width: max-content;
+}
+
+.closeCheck {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  background-color: gray;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .bestOffer {
+    display: none;
+  }
+
+  .filterContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .leftItemBottom {
+    display: flex;
+    gap: 100px;
+  }
+
+  .qButton {
+    margin: 20px 0px;
+  }
+
+  .discountForm {
+    padding: 0;
+  }
+
+  .codee {
+    font-size: 22px;
+  }
+
+  .btnApply {
+    bottom: 50px;
+    padding: 5px;
+  }
+}

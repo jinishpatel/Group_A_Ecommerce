@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/filter.css" />
+    <title>Group5r</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+
+    <nav>
+      <div class="navTop">
+        <div class="navItem">
+          <a href="./index.html">
+            <span class="navTItle"
+              >.<b>group</b>5<i><b>Store</b></i>
+            </span>
+          </a>
+        </div>
+        <div class="navItem">
+          <span class="bestOffer">!!Steal the best deals!!</span>
+        </div>
+        <div class="navItem authCart">
+          <div class="auth">
+            <span class="login">Logout</span>
+          </div>
+          <div class="cart">
+            <a href="./cart.html">
+              <img src="../img/cart.png" alt="" srcset="" class="navCart" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="navBottom">
+            <h4 class="menuItem">PISTOL</h4>
+            <h4 class="menuItem">SHOE</h4>
+            <h4 class="menuItem">CAMERA</h4>
+            <h4 class="menuItem">GAME CONSOLE</h4>
+            <h4 class="menuItem">HEADSET</h4>
+        </div> -->
+    </nav>
+
+    <!-- product filter page -->
+    <div class="filterContainer">
+      <div class="leftMenu">
+        <input type="text" placeholder="Search..." class="search" />
+        <h1>Categories</h1>
+        <div class="cats"></div>
+        <h1>Maximum Price</h1>
+        <div class="price">
+          <input type="range" class="priceRange" />
+          <span class="priceValue"></span>
+        </div>
+      </div>
+      <div class="content">
+        <div class="products"></div>
+      </div>
+    </div>
+
+    <script type="module" src="../script/filter.js"></script>
+  </body>
+</html>
